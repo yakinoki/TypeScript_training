@@ -16,3 +16,8 @@ console.log(user.name);
 console.log(user.isteen());
 user.age = 15
 console.log(user.isteen());
+
+function Hello(name: string):string {
+    return `Hello ${name}`
+}
+console.log(Hello('Paul'))
