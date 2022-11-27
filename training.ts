@@ -21,3 +21,16 @@ function Hello(name: string):string {
     return `Hello ${name}`
 }
 console.log(Hello('Paul'))
+
+
+type SupportVersions = {
+    [env: number]: boolean;
+}
+
+let versions: SupportVersions = {
+    102: true,
+    200: false,
+}
+
+
+  
