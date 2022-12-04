@@ -1,0 +1,25 @@
+{
+  "name": "typescript_training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yakinoki/Typescript_training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yakinoki/Typescript_training/issues"
+  },
+  "homepage": "https://github.com/yakinoki/Typescript_training#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "typescript": "^4.9.3"
+  }
+}
