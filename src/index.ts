@@ -32,5 +32,12 @@ let versions: SupportVersions = {
     200: false,
 }
 
+let result = "";
+while (result.length < 20) {
+    result += "Hello";
+}
+
+console.log(result); 
+
 
   
