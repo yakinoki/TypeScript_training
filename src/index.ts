@@ -39,5 +39,14 @@ while (result.length < 20) {
 
 console.log(result); 
 
+enum Suit {
+    Spade,
+    Heart,
+    Club,
+    Diamond
+}
+
+console.log(Suit[0]);
+
 
   
