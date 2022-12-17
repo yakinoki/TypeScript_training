@@ -1,4 +1,6 @@
-import { Hello } from './functions'
+import { Hello
+        ,MSGtest
+} from './functions'
 
 const t = true;
 
@@ -48,5 +50,4 @@ enum Suit {
 
 console.log(Suit[0]);
 
-
-  
+console.log(MSGtest("ok!"));
