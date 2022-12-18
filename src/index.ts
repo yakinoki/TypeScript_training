@@ -51,3 +51,6 @@ enum Suit {
 console.log(Suit[0]);
 
 console.log(MSGtest("ok!"));
+
+const increment = (num: number): number => num + 1;
+console.log(increment(3));
