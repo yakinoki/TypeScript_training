@@ -14,6 +14,7 @@ export function MSGtest(msg: string):void {
         }, 1000);
         });
         return returnPromise;
+        console.log("returnの前に書かないとダメ");
     };
     
     const func = async () => {
