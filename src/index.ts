@@ -6,6 +6,7 @@ const t = true;
 
 console.log(t);
 console.log(t && t);
+console.error(`error_test`, t)
 
 const user = {
     name: "John",
