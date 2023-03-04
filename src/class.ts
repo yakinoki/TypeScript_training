@@ -1,3 +1,4 @@
+// クラスによって作成されたオブジェクトをインスタンスと呼ぶ。
 class Person {
     name: string;
     constructor(initName: string) {
