@@ -1,6 +1,5 @@
-import { Hello
-        ,MSGtest
-} from './functions'
+import { Hello, MSGtest } from './functions'
+import { testHello } from '../Functions/TEST'
 
 const t = true;
 
@@ -24,6 +23,7 @@ console.log(user.isteen());
 
 
 console.log(Hello('Paul'))
+console.log(testHello('Paul'))
 
 
 type SupportVersions = {
