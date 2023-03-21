@@ -55,3 +55,11 @@ console.log(MSGtest("ok!"));
 
 const increment = (num: number): number => num + 1;
 console.log(increment(3));
+
+
+
+
+const x = 8;
+for (let i = 0; i < x; i ++){
+    console.log(i);
+};
