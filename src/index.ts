@@ -1,11 +1,12 @@
+// Importing functions from different files
 import { Hello, MSGtest } from './functions'
 import { testHello } from '../Functions/TEST'
 
 const t = true;
 
-console.log(t);
-console.log(t && t);
-console.error(`error_test`, t)
+console.log(t); // Output: true
+console.log(t && t); // Output: true
+console.error(`error_test`, t) // Output: error_test true
 
 const user = {
     name: "John",
@@ -16,15 +17,13 @@ const user = {
 };
 
 user.name = "Adam";
-console.log(user.name);
-console.log(user.isteen());
+console.log(user.name); // Output: Adam
+console.log(user.isteen()); // Output: false
 user.age = 15
-console.log(user.isteen());
+console.log(user.isteen()); // Output: true
 
-
-console.log(Hello('Paul'))
-console.log(testHello('Paul'))
-
+console.log(Hello('Paul')); // Output: Hello, Paul
+console.log(testHello('Paul')); // Output: Hello from test, Paul
 
 type SupportVersions = {
     [env: number]: boolean;
@@ -40,7 +39,7 @@ while (result.length < 20) {
     result += "Hello";
 }
 
-console.log(result); 
+console.log(result); // Output: HelloHelloHelloHelloHello
 
 enum Suit {
     Spade,
@@ -49,9 +48,9 @@ enum Suit {
     Diamond
 }
 
-console.log(Suit[0]);
+console.log(Suit[0]); // Output: Spade
 
-console.log(MSGtest("ok!"));
+console.log(MSGtest("ok!")); // Output: Message: ok!
 
 const increment = (num: number): number => num + 1;
-console.log(increment(3));
+console.log(increment(3)); // Output: 4
