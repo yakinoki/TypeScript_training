@@ -1,56 +1,52 @@
-// Importing functions from different files
-import { Hello, MSGtest } from './functions'
-import { testHello } from '../Functions/TEST'
+import { Hello, MSGtest } from './functions';
+import { testHello } from '../Functions/TEST';
 
 const t = true;
 
 console.log(t); // Output: true
 console.log(t && t); // Output: true
-console.error(`error_test`, t) // Output: error_test true
+console.error('error_test', t); // Output: error_test true
 
 const user = {
-    name: "John",
-    age: 30,
-    isteen() {
-        return this.age >=13 && this.age <=19;
-    }
+  name: 'John',
+  age: 30,
+  isTeen() {
+    return this.age >= 13 && this.age <= 19;
+  },
 };
 
-user.name = "Adam";
+user.name = 'Adam';
 console.log(user.name); // Output: Adam
-console.log(user.isteen()); // Output: false
-user.age = 15
-console.log(user.isteen()); // Output: true
+console.log(user.isTeen()); // Output: false
+user.age = 15;
+console.log(user.isTeen()); // Output: true
 
 console.log(Hello('Paul')); // Output: Hello, Paul
 console.log(testHello('Paul')); // Output: Hello from test, Paul
 
 type SupportVersions = {
-    [env: number]: boolean;
-}
+  [env: number]: boolean;
+};
 
 let versions: SupportVersions = {
-    102: true,
-    200: false,
-}
+  102: true,
+  200: false,
+};
 
-let result = "";
+let result = '';
 while (result.length < 20) {
-    result += "Hello";
+  result += 'Hello';
 }
 
 console.log(result); // Output: HelloHelloHelloHelloHello
 
 enum Suit {
-    Spade,
-    Heart,
-    Club,
-    Diamond
+  Spade,
+  Heart,
+  Club,
+  Diamond,
 }
 
 console.log(Suit[0]); // Output: Spade
 
-console.log(MSGtest("ok!")); // Output: Message: ok!
-
-const increment = (num: number): number => num + 1;
-console.log(increment(3)); // Output: 4
+console.log(MSGtest('ok!')); // Output: Message: ok!
