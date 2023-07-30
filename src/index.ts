@@ -1,5 +1,5 @@
 import { Hello, MSGtest } from './functions';
-import { testHello } from '../Functions/TEST';
+import { testHello, testHello_2 } from '../Functions/TEST';
 
 const t = true;
 
@@ -23,6 +23,7 @@ console.log(user.isTeen()); // Output: true
 
 console.log(Hello('Paul')); // Output: Hello, Paul
 console.log(testHello('Paul')); // Output: Hello from test, Paul
+console.log(testHello_2('Paul')); // Output: Hello from test, Paul
 
 type SupportVersions = {
   [env: number]: boolean;

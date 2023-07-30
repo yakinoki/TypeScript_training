@@ -1,3 +1,3 @@
-export { testHello } from './functions'
+export { testHello, testHello_2 } from './functions'
 
 
