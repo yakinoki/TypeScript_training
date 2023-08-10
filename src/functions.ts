@@ -25,3 +25,14 @@ export function MSGtest(msg: string):void {
 
     func();
 }
+
+// 遅延をシミュレートするための関数
+function delay(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
+  
+// 非同期関数の定義
+export async function fetchData(): Promise<string> {
+await delay(2000); // 2秒の遅延をシミュレート
+return "データが取得されました！";
+}
