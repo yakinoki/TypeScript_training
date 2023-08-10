@@ -1,4 +1,4 @@
-import { Hello, MSGtest } from './functions';
+import { Hello, MSGtest, fetchData } from './functions';
 import { testHello, testHello_2 } from '../Functions/TEST';
 
 const t = true;
@@ -51,3 +51,18 @@ enum Suit {
 console.log(Suit[0]); // Output: Spade
 
 console.log(MSGtest('ok!')); // Output: Message: ok!
+
+
+// 非同期関数を呼び出し、結果を処理する
+async function main() {
+  try {
+    console.log("データを取得中...");
+    const result = await fetchData(); // fetchData関数をawaitで呼び出し
+    console.log(result); // 結果を表示
+  } catch (error) {
+    console.error("エラーが発生しました:", error);
+  }
+}
+
+// main関数を実行
+main();
