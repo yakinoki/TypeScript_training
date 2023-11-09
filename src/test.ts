@@ -63,3 +63,8 @@ const x = 8;
 for (let i = 0; i < x; i ++){
     console.log(i);
 };
+
+const arr1 = [0, 0, 9];
+const arr2 = [1, 2, 3, ...arr1];
+
+console.log(arr2); // [1, 2, 3, 0, 0, 9] が表示される
