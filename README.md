@@ -2,6 +2,6 @@
 
 # TypeScript_training
 
-## test.ts
+## src/test.ts
 
 This is a mock file.
