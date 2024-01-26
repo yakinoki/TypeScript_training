@@ -19,3 +19,22 @@ export const testHello_2 = (name: string, userid?: string): string => {
 console.log(testHello_2('Paul', 'www'));  // 名前を "Paul"、ユーザーIDを "www" でtestHello関数を呼び出し、結果をログに出力
 
 
+// 数値の配列の場合の並べ替え関数
+function sortNumbers(numbers: number[]): number[] {
+    return numbers.slice().sort((a, b) => a - b);
+  }
+  
+  // 文字列の配列の場合の並べ替え関数
+  function sortStrings(strings: string[]): string[] {
+    return strings.slice().sort();
+  }
+  
+  // 例の使用
+  let numbers: number[] = [4, 2, 7, 1, 9];
+  let sortedNumbers: number[] = sortNumbers(numbers);
+  console.log(sortedNumbers); // 出力: [1, 2, 4, 7, 9]
+  
+  let strings: string[] = ["banana", "apple", "orange", "grape"];
+  let sortedStrings: string[] = sortStrings(strings);
+  console.log(sortedStrings); // 出力: ["apple", "banana", "grape", "orange"]
+  
