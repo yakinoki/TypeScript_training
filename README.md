@@ -5,3 +5,7 @@
 ## src/test.ts
 
 This is a mock file.
+
+## tsconfig.json
+
+TypeScriptコンパイラに対する設定を記述したファイル。
